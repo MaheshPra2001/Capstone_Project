@@ -1,4 +1,4 @@
-aws_region         = "us-east-1"
+aws_region         = "us-west-1"
 upload_bucket_name = "devops-accelerator-upload-bucket"
 
 frontend_bucket_name     = "devops-accelerator-frontend-hosting-bucket"
