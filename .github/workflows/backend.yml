@@ -8,7 +8,7 @@ on:
       - main
 
 env:
-  AWS_REGION: us-east-1
+  AWS_REGION: us-west-1
   LAMBDA_FUNCTION_NAME: ${{ secrets.LAMBDA_FUNCTION_NAME }}
 
 jobs:
@@ -36,4 +36,5 @@ jobs:
         run: |
           aws lambda update-function-code \
             --function-name ${{ env.LAMBDA_FUNCTION }} \
+
             --zip-file fileb://backend/process-uploaded-file/lambda.zip
